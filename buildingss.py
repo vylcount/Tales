@@ -113,7 +113,7 @@ class Ranch:
                 print("-----")
                 input('>... ')
             else:
-                print('ranger is deasd')
+                print('ranger is dead')
                 print("-----")
                 input('>... ')
                 worker_ranch = False

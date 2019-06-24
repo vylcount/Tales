@@ -10,7 +10,7 @@
   </component>
   <component name="ExportToHTMLSettings">
     <option name="printScope" value="1" />
-    <option name="OUTPUT_DIRECTORY" value="$PROJECT_DIR$/../tale of a kingdom\exportToHTML" />
+    <option name="OUTPUT_DIRECTORY" value="$PROJECT_DIR$/../Tales\exportToHTML" />
   </component>
   <component name="FileEditorManager">
     <splitter split-orientation="horizontal" split-proportion="0.44949192">
@@ -68,8 +68,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/buildingss.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="562">
-                  <caret line="120" selection-start-line="120" selection-end-line="120" />
+                <state relative-caret-position="526">
+                  <caret line="118" column="36" lean-forward="true" selection-start-line="118" selection-start-column="36" selection-end-line="118" selection-end-column="36" />
                   <folding>
                     <element signature="e#0#13#0" expanded="true" />
                   </folding>
@@ -182,8 +182,8 @@
         <option value="$PROJECT_DIR$/cask.py" />
         <option value="$PROJECT_DIR$/start.py" />
         <option value="$PROJECT_DIR$/buildingss.py" />
-        <option value="$PROJECT_DIR$/buildingss.py" />
         <option value="$PROJECT_DIR$/../helloworld/WorldHub.py" />
+        <option value="$PROJECT_DIR$/buildingss.py" />
       </list>
     </option>
   </component>
@@ -200,17 +200,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="Tale of A Kingdom" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Tale of A Kingdom" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
+      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -239,8 +229,29 @@
     </option>
   </component>
   <component name="RunManager" selected="Python.start">
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <module name="Tales" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="buildings" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="tale of a kingdom" />
+      <module name="Tales" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -261,7 +272,7 @@
       <method v="2" />
     </configuration>
     <configuration name="buildingss" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="tale of a kingdom" />
+      <module name="Tales" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -282,7 +293,7 @@
       <method v="2" />
     </configuration>
     <configuration name="cask" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="tale of a kingdom" />
+      <module name="Tales" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -303,7 +314,7 @@
       <method v="2" />
     </configuration>
     <configuration name="main (1)" type="PythonConfigurationType" factoryName="Python">
-      <module name="tale of a kingdom" />
+      <module name="Tales" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -324,7 +335,7 @@
       <method v="2" />
     </configuration>
     <configuration name="main" type="PythonConfigurationType" factoryName="Python">
-      <module name="tale of a kingdom" />
+      <module name="Tales" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -345,7 +356,7 @@
       <method v="2" />
     </configuration>
     <configuration name="mainnew" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="tale of a kingdom" />
+      <module name="Tales" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -366,7 +377,7 @@
       <method v="2" />
     </configuration>
     <configuration name="people generator" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="tale of a kingdom" />
+      <module name="Tales" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -387,7 +398,7 @@
       <method v="2" />
     </configuration>
     <configuration name="start" type="PythonConfigurationType" factoryName="Python">
-      <module name="tale of a kingdom" />
+      <module name="Tales" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -405,6 +416,38 @@
       <option name="MODULE_MODE" value="false" />
       <option name="REDIRECT_INPUT" value="false" />
       <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Doctests">
+      <module name="Tales" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Unittests">
+      <module name="Tales" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
     <list>
@@ -451,17 +494,18 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="2062" height="1126" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.17423494" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info id="Query Editor" order="3" />
       <window_info anchor="bottom" id="Terminal" order="0" sideWeight="0.49901283" weight="0.32964823" />
-      <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.50246793" side_tool="true" visible="true" weight="0.32964823" />
+      <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.5029615" side_tool="true" visible="true" weight="0.32964823" />
       <window_info anchor="bottom" id="Python Console" order="2" sideWeight="0.4995064" weight="0.32964823" />
       <window_info anchor="bottom" id="Message" order="3" />
       <window_info anchor="bottom" id="Find" order="4" weight="0.32964823" />
-      <window_info anchor="bottom" id="Version Control" order="5" sideWeight="0.49753207" visible="true" weight="0.32964823" />
+      <window_info anchor="bottom" id="Version Control" order="5" sideWeight="0.4970385" visible="true" weight="0.32964823" />
       <window_info anchor="bottom" id="Debug" order="6" sideWeight="0.494077" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="7" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="8" weight="0.4" />
@@ -631,8 +675,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/buildingss.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="562">
-          <caret line="120" selection-start-line="120" selection-end-line="120" />
+        <state relative-caret-position="526">
+          <caret line="118" column="36" lean-forward="true" selection-start-line="118" selection-start-column="36" selection-end-line="118" selection-end-column="36" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
