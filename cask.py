@@ -3,7 +3,7 @@ import itertools
 import buildingss
 import mainnew
 
-ci = 0  # characters in game
+ci = 0
 number_chars_died = 0
 
 p1 = itertools.product(mainnew.one_name, mainnew.one_name2)
