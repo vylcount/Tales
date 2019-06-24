@@ -83,15 +83,6 @@ def add_character():
     result.append(cha)
 
 
-# def openf():
-#     for x in result:
-#         with open("character" + " " + x['name'], "w+") as new:
-#             new.write("character name" + " " + x['name'])
-#             new.write("\n" + "character age" + " " + str(x['age']))
-#             new.write("\n" + "character job" + " " + str(x['job']))
-#             new.write("\n" + "life expectancy" + " " + str(x['life_exp']))
-
-
 def create_txt_char():
     for x in result:
         if os.path.exists("character" + " " + x['name']):
@@ -101,12 +92,6 @@ def create_txt_char():
             new.write("\n" + "character age" + " " + str(x['age']))
             new.write("\n" + "character job" + " " + str(x['job']))
             new.write("\n" + "life expectancy" + " " + str(x['life_exp']))
-
-
-# def multipp():
-#     for x in result:
-#         pool = multiprocessing.Pool()
-#         pool.map(openf, result)
 
 
 def addcha(n):
@@ -171,7 +156,6 @@ def remove_char():
 
     print("remove which character?")
     indexx = int(input('> ')) - 1
-    # print("index = {}".format(indexx))
     os.system("cls")
     print("~" * 50)
     print("~" * 50)

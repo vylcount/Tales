@@ -3,8 +3,6 @@ import sys
 import os
 import mainnew
 
-# from mainnew import view_char, list_chars, result, search_dictionaries
-
 """
 Ranch
 
