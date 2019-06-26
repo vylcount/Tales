@@ -3,7 +3,7 @@ import random
 import os.path
 import sys
 import cask
-import buildingss
+import buildings
 import textwrap
 import cProfile
 import colorama
@@ -281,7 +281,7 @@ def end_of_turn_events():
     print('season: {}'.format(Turns.seasons))
     print('*' * 29)
 
-    print('Units of food gained this season: {}'.format(buildingss.Ranch.units_food_s))
+    print('Units of food gained this season: {}'.format(buildings.Ranch.units_food_s))
     # except NameError:
     #     print('there is no rancher in the ranch')
     total_food += cask.Kingdomfood.total(0)

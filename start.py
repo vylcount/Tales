@@ -3,8 +3,8 @@ import numpy
 
 import cask
 import mainnew
-import buildingss
-# from buildingss import Ranch
+import buildings
+# from buildings import Ranch
 import dill
 import pickle
 import math
@@ -79,8 +79,8 @@ while game_running:
 
         # debug()
         mainnew.create_txt_char()
-        buildingss.Ranch.manage_ranch()
-        buildingss.Ranch.menu()
+        buildings.Ranch.manage_ranch()
+        buildings.Ranch.menu()
         mainnew.end_of_turn_events()
         print("-----")
         input(">> Go to menu ")

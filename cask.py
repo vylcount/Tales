@@ -1,6 +1,6 @@
 import itertools
 
-import buildingss
+import buildings
 import mainnew
 
 ci = 0
@@ -37,5 +37,5 @@ food to be consumed
 class Kingdomfood:
     @staticmethod
     def total(foods=0):
-        foods += buildingss.Ranch.units_food_s
+        foods += buildings.Ranch.units_food_s
         return foods
