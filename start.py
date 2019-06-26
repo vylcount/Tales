@@ -1,7 +1,7 @@
 import sys
 import numpy
 
-import cask
+import program1
 import mainnew
 import buildings
 # from buildings import Ranch
@@ -68,7 +68,7 @@ while game_running:
         # pr = cProfile.Profile()
         # pr.enable()
         mainnew.addcha(int(pi))
-        cask.character_count(pi, 0)
+        program1.character_count(pi, 0)
 
         # pr.disable()
         # s = io.StringIO()
@@ -111,7 +111,7 @@ while game_running:
         input('\nok...')
         mainnew.debugg()
     elif player_input == "4":
-        if cask.ci == 0:
+        if program1.ci == 0:
             print('There are no characters')
             input('\nok...')
         else:
@@ -119,7 +119,7 @@ while game_running:
             mainnew.debugg()
             input('\nok...')
     elif player_input == "5":
-        print('\ncharacters died: {}'.format(cask.number_chars_died))
+        print('\ncharacters died: {}'.format(program1.number_chars_died))
         input('\nok...')
 
 print("\n-----------------")

@@ -2,7 +2,7 @@ import os
 import random
 import os.path
 import sys
-import cask
+import program1
 import buildings
 import textwrap
 import cProfile
@@ -219,10 +219,10 @@ Remove characters
         if x['life_exp'] > -1:
             continue
             # os.remove("character" + " " + str(x["name"]))
-        cask.characters_died()
+        program1.characters_died()
         result.remove(x)
         # [result.remove(x) for x in result if x['life_exp'] > -1]
-        cask.character_count(0, 1)
+        program1.character_count(0, 1)
 
 
 def remove_char_file():
@@ -284,13 +284,13 @@ def end_of_turn_events():
     print('Units of food gained this season: {}'.format(buildings.Ranch.units_food_s))
     # except NameError:
     #     print('there is no rancher in the ranch')
-    total_food += cask.Kingdomfood.total(0)
+    total_food += program1.Kingdomfood.total(0)
     print('total food: {}'.format(math.floor(total_food)))
-    total_food -= (cask.ci / 2)
+    total_food -= (program1.ci / 2)
     if total_food <= 0:
         total_food = 0
 
-    print('Units of food consumed this season: {}'.format((cask.ci / 2)))
+    print('Units of food consumed this season: {}'.format((program1.ci / 2)))
     print('total food after: {}'.format(math.floor(total_food)))
     print('*' * 29)
 
@@ -324,7 +324,7 @@ def debugg():
     print('[DEBUG]\n')
     print('names generated: ' + str(len(nameslist)))
     print('names used: ' + str(len(nameslist2)))
-    cask.show_char_count()
+    program1.show_char_count()
     print('possible names: {}'.format(len(pk)))
     print('possible jobs: {}'.format(len(pk2)))
     print(">" * 29 + '\n')
