@@ -2,7 +2,7 @@ import sys
 import numpy
 
 import program1
-import mainnew
+import mainprogram
 import buildings
 # from buildings import Ranch
 import dill
@@ -25,8 +25,8 @@ game_running = True
 
 # pr = cProfile.Profile()
 # pr.enable()
-while len(mainnew.nameslist) < 1824:
-    mainnew.generate_name()
+while len(mainprogram.nameslist) < 1824:
+    mainprogram.generate_name()
 # ss2 = sorted(nameslist2)
 # print(ss2)
 
@@ -53,7 +53,7 @@ while game_running:
     print("press (3) to load game")
     print("press (4) to view characters")
     print("press (5) to view stats")
-    mainnew.debugg()
+    mainprogram.debugg()
 
     player_input = input(">>")
 
@@ -63,11 +63,11 @@ while game_running:
         print("~" * 50)
         print("How many characters you want to add? ")
 
-        mainnew.debugg()
+        mainprogram.debugg()
         pi = input('> ')
         # pr = cProfile.Profile()
         # pr.enable()
-        mainnew.addcha(int(pi))
+        mainprogram.addcha(int(pi))
         program1.character_count(pi, 0)
 
         # pr.disable()
@@ -78,10 +78,10 @@ while game_running:
         # print(s.getvalue())
 
         # debug()
-        mainnew.create_txt_char()
+        mainprogram.create_txt_char()
         buildings.Ranch.manage_ranch()
         buildings.Ranch.menu()
-        mainnew.end_of_turn_events()
+        mainprogram.end_of_turn_events()
         print("-----")
         input(">> Go to menu ")
 
@@ -96,7 +96,7 @@ while game_running:
         # pickleout.close()
         print("game saved!")
         input('\nok...')
-        mainnew.debugg()
+        mainprogram.debugg()
     elif player_input == "3":
         os.system("cls")
         print("~" * 50)
@@ -107,16 +107,16 @@ while game_running:
         # picklein = open("dict.pickle", "rb")
         # exm = pickle.load(picklein)
         print("game loaded!")
-        print(mainnew.namesload)
+        print(mainprogram.namesload)
         input('\nok...')
-        mainnew.debugg()
+        mainprogram.debugg()
     elif player_input == "4":
         if program1.ci == 0:
             print('There are no characters')
             input('\nok...')
         else:
-            mainnew.view_char()
-            mainnew.debugg()
+            mainprogram.view_char()
+            mainprogram.debugg()
             input('\nok...')
     elif player_input == "5":
         print('\ncharacters died: {}'.format(program1.number_chars_died))

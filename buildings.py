@@ -1,7 +1,7 @@
 import random
 import sys
 import os
-import mainnew
+import mainprogram
 
 """
 Ranch
@@ -59,30 +59,30 @@ class Ranch:
 
             print('hire a rancher')
             print('-' * 42)
-            mainnew.list_chars()
+            mainprogram.list_chars()
             print('\na) view characters')
             print('c) to choose worker')
             pi = input('>> ')
             if pi == str('a'):
-                mainnew.view_char()
+                mainprogram.view_char()
                 Ranch.menu()
             elif pi == str('c'):
                 indexx = int(input('input character number > ')) - 1
                 print('\n')
-                print(str(mainnew.result[indexx]["name"]))
+                print(str(mainprogram.result[indexx]["name"]))
                 print('\n')
                 print('press "h" to hire selected')
                 print('press "b" to go back')
                 pi = input('> ')
                 if pi == 'h':
                     worker_ranch = True
-                    Rancher.name = str(mainnew.result[indexx]["name"])
-                    mainnew.result[indexx]["job"] = str('rancher')
-                    new = open("character" + " " + str(mainnew.result[indexx]["name"]), "w")
-                    new.write("character name" + " " + mainnew.result[indexx]["name"])
-                    new.write("\n" + "character age" + " " + str(mainnew.result[indexx]["age"]))
+                    Rancher.name = str(mainprogram.result[indexx]["name"])
+                    mainprogram.result[indexx]["job"] = str('rancher')
+                    new = open("character" + " " + str(mainprogram.result[indexx]["name"]), "w")
+                    new.write("character name" + " " + mainprogram.result[indexx]["name"])
+                    new.write("\n" + "character age" + " " + str(mainprogram.result[indexx]["age"]))
                     new.write("\n" + "character job" + " " + str('rancher'))
-                    new.write("\n" + "life expectancy" + " " + str(mainnew.result[indexx]["life_exp"]))
+                    new.write("\n" + "life expectancy" + " " + str(mainprogram.result[indexx]["life_exp"]))
                     new.close()
 
                     print('rancher is now {}'.format(Rancher.name))
@@ -97,7 +97,7 @@ class Ranch:
             print('RANCH')
             print("~" * 50)
 
-            if mainnew.search_dictionaries('name', Rancher.name, mainnew.result):
+            if mainprogram.search_dictionaries('name', Rancher.name, mainprogram.result):
                 # if list(filter(lambda dic: dic['name'] == Rancher.name, result)):
 
                 print('rancher: {}'.format(Rancher.name))
@@ -106,8 +106,8 @@ class Ranch:
                 print('number of total chickens: {}'.format(Ranch.chickens))
                 print('number of cows this season: {}'.format(Ranch.cows_season))
                 print('number of chickens this season: {}'.format(Ranch.chickens_season))
-                print('total food: {}'.format(mainnew.total_food))
-                print('total food expected this season: {}'.format(mainnew.total_food + Ranch.units_food_s))
+                print('total food: {}'.format(mainprogram.total_food))
+                print('total food expected this season: {}'.format(mainprogram.total_food + Ranch.units_food_s))
                 print("-----")
                 input('>... ')
             else:

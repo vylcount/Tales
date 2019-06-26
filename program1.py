@@ -1,14 +1,14 @@
 import itertools
 
 import buildings
-import mainnew
+import mainprogram
 
 ci = 0
 number_chars_died = 0
 
-p1 = itertools.product(mainnew.one_name, mainnew.one_name2)
+p1 = itertools.product(mainprogram.one_name, mainprogram.one_name2)
 pk = list(p1)
-p2 = itertools.product(mainnew.one_job)
+p2 = itertools.product(mainprogram.one_job)
 pk2 = list(p2)
 
 
