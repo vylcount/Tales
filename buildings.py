@@ -78,7 +78,7 @@ class Ranch:
                     worker_ranch = True
                     Rancher.name = str(mainprogram.result[indexx]["name"])
                     mainprogram.result[indexx]["job"] = str('rancher')
-                    new = open("character" + " " + str(mainprogram.result[indexx]["name"]), "w")
+                    new = open("CHARACTERS\\""character" + " " + str(mainprogram.result[indexx]["name"]), "w")
                     new.write("character name" + " " + mainprogram.result[indexx]["name"])
                     new.write("\n" + "character age" + " " + str(mainprogram.result[indexx]["age"]))
                     new.write("\n" + "character job" + " " + str('rancher'))

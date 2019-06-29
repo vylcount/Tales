@@ -87,7 +87,7 @@ def create_txt_char():
     for x in result:
         if os.path.exists("character" + " " + x['name']):
             continue
-        with open("character" + " " + x['name'], "w+") as new:
+        with open("CHARACTERS\\""character" + " " + x['name'], "w+") as new:
             new.write("character name" + " " + x['name'])
             new.write("\n" + "character age" + " " + str(x['age']))
             new.write("\n" + "character job" + " " + str(x['job']))
@@ -131,12 +131,12 @@ def change_name_char(selection):
         "changed name to {}".format(x["name"]), "from {}".format(result[indexx]["name"])
     )
     os.rename(
-        "character" + " " + str(result[indexx]["name"]),
-        "character" + " " + str(x["name"]),
+        "CHARACTERS\\""character" + " " + str(result[indexx]["name"]),
+        "CHARACTERS\\""character" + " " + str(x["name"]),
     )
     result[indexx] = x.copy()
 
-    new = open("character" + " " + str(result[indexx]["name"]), "w")
+    new = open("CHARACTERS\\""character" + " " + str(result[indexx]["name"]), "w")
     new.write("character name" + " " + result[indexx]["name"])
     new.write("\n" + "character age" + " " + str(result[indexx]["age"]))
     new.write("\n" + "character job" + " " + str(result[indexx]["job"]))
@@ -162,7 +162,7 @@ def remove_char():
     print(result[indexx])
     print("removed character {}".format(result[indexx]["name"]))
     print("-" * 29)
-    os.remove("character" + " " + str(result[indexx]["name"]))
+    os.remove("CHARACTERS\\""character" + " " + str(result[indexx]["name"]))
     result.pop(indexx)  # if you want to remove character
     characters -= 1
 
@@ -187,7 +187,7 @@ def view_char():
     indexx = int(input('> ')) - 1
     try:
 
-        new = open("character" + " " + str(result[indexx]["name"]), "w+")
+        new = open("CHARACTERS\\""character" + " " + str(result[indexx]["name"]), "w+")
         new.write("character name" + " " + result[indexx]["name"])
         new.write("\n" + "character age" + " " + str(result[indexx]["age"]))
         new.write("\n" + "character job" + " " + str(result[indexx]["job"]))
@@ -233,7 +233,7 @@ Remove characters txt files
     for x in result:
         if x['life_exp'] > -1:
             continue
-        os.remove("character" + " " + str(x["name"]))
+        os.remove("CHARACTERS\\""character" + " " + str(x["name"]))
 
 
 # os.system("cls")

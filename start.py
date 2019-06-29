@@ -77,7 +77,7 @@ while game_running:
         # ps.print_stats()
         # print(s.getvalue())
 
-        # debug()
+        mainprogram.debug()
         mainprogram.create_txt_char()
         buildings.Ranch.manage_ranch()
         buildings.Ranch.menu()
