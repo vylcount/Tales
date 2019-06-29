@@ -77,8 +77,8 @@ while game_running:
         # ps.print_stats()
         # print(s.getvalue())
 
-        mainprogram.debug()
         mainprogram.create_txt_char()
+        # mainprogram.debug()
         buildings.Ranch.manage_ranch()
         buildings.Ranch.menu()
         mainprogram.end_of_turn_events()
