@@ -15,8 +15,6 @@ import time
 import profile
 import re
 import multiprocessing as mp
-import cProfile, pstats, io
-from pstats import SortKey
 
 # from colorama import Back, Fore, Style, init
 #
@@ -29,17 +27,6 @@ nameslist = set()
 nameslist2 = []
 namesload = []
 total_food = 0
-
-# def profileit(func):
-#     def wrapper(*args, **kwargs):
-#         datafn = func.__name__ + ".profile"  # Name the data file sensibly
-#         prof = cProfile.Profile()
-#         retval = prof.runcall(func, *args, **kwargs)
-#         prof.dump_stats(datafn)
-#         return retval
-#
-#     return wrapper
-
 
 with open("C:\\Users\\User\\Desktop\\first names.txt") as names_file:
     one_name = names_file.read().splitlines()

@@ -15,30 +15,15 @@ from multiprocessing import Pool
 import cProfile
 import profile
 import re
-import cProfile, pstats, io
-from pstats import SortKey
 
 """ Program Initialization """
 
 filename = "globalsave.pkl"
 game_running = True
 
-# pr = cProfile.Profile()
-# pr.enable()
+
 while len(mainprogram.nameslist) < 1824:
     mainprogram.generate_name()
-# ss2 = sorted(nameslist2)
-# print(ss2)
-
-# print('\n')
-# ss = sorted(nameslist)
-# print(ss)
-# pr.disable()
-# s = io.StringIO()
-# sortby = SortKey.CUMULATIVE
-# ps = pstats.Stats(pr, stream=s).sort_stats(sortby)
-# ps.print_stats()
-# print(s.getvalue())
 
 
 """ Game Initialization """
@@ -65,20 +50,13 @@ while game_running:
 
         mainprogram.debugg()
         pi = input('> ')
-        # pr = cProfile.Profile()
-        # pr.enable()
+
         mainprogram.addcha(int(pi))
         program1.character_count(pi, 0)
-
-        # pr.disable()
-        # s = io.StringIO()
-        # sortby = SortKey.CUMULATIVE
-        # ps = pstats.Stats(pr, stream=s).sort_stats(sortby)
-        # ps.print_stats()
-        # print(s.getvalue())
-
         mainprogram.create_txt_char()
+
         # mainprogram.debug()
+
         buildings.Ranch.manage_ranch()
         buildings.Ranch.menu()
         mainprogram.end_of_turn_events()
@@ -91,9 +69,6 @@ while game_running:
         print("~" * 50)
 
         dill.dump_session(filename)
-        # pickleout = open("dict.pickle", "wb")
-        # pickle.dump([namesload, chas], pickleout)
-        # pickleout.close()
         print("game saved!")
         input('\nok...')
         mainprogram.debugg()
@@ -104,8 +79,6 @@ while game_running:
 
         game_running = False
         dill.load_session(filename)
-        # picklein = open("dict.pickle", "rb")
-        # exm = pickle.load(picklein)
         print("game loaded!")
         print(mainprogram.namesload)
         input('\nok...')
