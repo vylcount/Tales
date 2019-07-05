@@ -1,10 +1,5 @@
 import sys
 import numpy
-
-import program1
-import mainprogram
-import buildings
-# from buildings import Ranch
 import dill
 import pickle
 import math
@@ -15,6 +10,11 @@ from multiprocessing import Pool
 import cProfile
 import profile
 import re
+
+import program1
+import mainprogram
+import buildings
+# from buildings import Ranch
 
 """ Program Initialization """
 
@@ -56,9 +56,8 @@ while game_running:
         mainprogram.create_txt_char()
 
         # mainprogram.debug()
+        program1.Kingdom.menu()
 
-        buildings.Ranch.manage_ranch()
-        buildings.Ranch.menu()
         mainprogram.end_of_turn_events()
         print("-----")
         input(">> Go to menu ")

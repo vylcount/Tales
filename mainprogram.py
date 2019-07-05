@@ -2,8 +2,6 @@ import os
 import random
 import os.path
 import sys
-import program1
-import buildings
 import textwrap
 import cProfile
 import colorama
@@ -15,6 +13,9 @@ import time
 import profile
 import re
 import multiprocessing as mp
+
+import program1
+import buildings
 
 # from colorama import Back, Fore, Style, init
 #
@@ -180,7 +181,7 @@ def view_char():
         new.write("\n" + "character job" + " " + str(result[indexx]["job"]))
         new.write("\n" + "life expectancy" + " " + str(result[indexx]["life_exp"]))
         new.close()
-        with open("character" + " " + str(result[indexx]["name"]), 'r') as r:
+        with open("CHARACTERS\\""character" + " " + str(result[indexx]["name"]), 'r') as r:
             os.system("cls")
             print("~" * 50)
             print("~" * 50)
