@@ -3,13 +3,12 @@ import itertools
 import buildings
 import mainprogram
 
+"""
+ci = characters in game (your characters)
+"""
+
 ci = 0
 number_chars_died = 0
-
-p1 = itertools.product(mainprogram.one_name, mainprogram.one_name2)
-pk = list(p1)
-p2 = itertools.product(mainprogram.one_job)
-pk2 = list(p2)
 
 
 def characters_died():
@@ -31,6 +30,8 @@ def show_char_count():
 
 """
 food to be consumed
+
+units_food_s = units of food per season
 """
 
 

@@ -65,7 +65,7 @@ def add_character():
     job_g = generate_job()
     age_g = 102
     # int(random.randint(12, 102))
-    life_exp_g = (int(math.ceil(((105 - age_g) / 3 * 2) + random.randint(0, 8))))
+    life_exp_g = (int(math.ceil(((105 - age_g) / 3 * 2) + random.randint(0, 8))) * 12)
 
     cha = {"name": name_g, "job": job_g, "age": age_g, "life_exp": life_exp_g}
     result.append(cha)
@@ -237,6 +237,11 @@ def aging():
         x['age'] += 1
         x['life_exp'] -= 1
         continue
+
+
+"""
+pri_mortgage = characters to die next season, life expectancy at zero.
+"""
 
 
 def pri_mortgage():
