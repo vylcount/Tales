@@ -57,7 +57,6 @@ while game_running:
 
         # mainprogram.debug()
         program1.Kingdom.menu()
-
         mainprogram.end_of_turn_events()
         print("-----")
         input(">> Go to menu ")

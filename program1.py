@@ -1,4 +1,5 @@
 import itertools
+import os
 
 import buildings
 import mainprogram
@@ -42,7 +43,8 @@ class Kingdomfood:
         return foods
 
 
-building = ['ranch', 'graveyard']
+building = []
+pre_building = ['ranch', 'graveyard']
 
 
 def list_buildings():
@@ -50,21 +52,56 @@ def list_buildings():
         print("{}: {}".format(i, pp))
 
 
+def list_pre_buildings():
+    for i, pp in enumerate(pre_building, start=1):
+        print("{}: {}".format(i, pp))
+
+
 class Kingdom:
     @staticmethod
     def menu():
+        os.system("cls")
+
         print('press (1) kingdom buildings')
-        print('press (2) to go back to kingdom menu')
+        print('press (2) build')
+        print('press (3) to go back to main menu')
         player_input = input(">>")
 
         if player_input == "1":
+            os.system("cls")
+
             print("~" * 50)
             print('kingdom buildings')
             print("~" * 50)
-            list_buildings()
-            print("enter which building?")
+
+            if len(building) == 0:
+                print("you haven't build any buildings yet")
+                Kingdom.menu()
+            else:
+                list_buildings()
+                print("enter which building?")
+                indexx = int(input('> ')) - 1
+
+                if building[indexx] == 'ranch':
+                    buildings.Ranch.manage_ranch()
+                    buildings.Ranch.menu()
+
+        if player_input == "2":
+            os.system("cls")
+
+            print("~" * 50)
+            print('build menu')
+            print("~" * 50)
+
+            list_pre_buildings()
+            print("build which building?")
             indexx = int(input('> ')) - 1
 
-            if building[indexx] == 'ranch':
-                buildings.Ranch.manage_ranch()
-                buildings.Ranch.menu()
+            if pre_building[indexx] == 'ranch':
+                if 'ranch' in building:
+                    print("you already built the ranch")
+                    input("...")
+                    Kingdom.menu()
+                else:
+                    building.append('ranch')
+                    Kingdom.menu()
