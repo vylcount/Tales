@@ -1,0 +1,9 @@
+Builder
+Writer
+Mason
+Woodcutter
+Priest
+Monk
+Warrior
+Serf
+Lord
